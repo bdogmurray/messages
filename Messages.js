@@ -17,14 +17,17 @@ const getRandom = () => {
 //  pull random pieces of each part to make sentences  //
 
 function makeSentence() {
-    finalSentence.push(nouns[getRandom]);
-    console.log(finalSentence)
-    finalSentence.push(verbs[getRandom]);
-    finalSentence.push(endings[getRandom]);
-    return finalSentence;
-    console.log(finalSentence);
+    finalSentence.push(nouns[getRandom()]);
+    //console.log(finalSentence);
+    finalSentence.push(verbs[getRandom()]);
+    //console.log(finalSentence);
+    finalSentence.push(endings[getRandom()]);
+    // return finalSentence;
+    // console.log(finalSentence);
+    const formatted = finalSentence.join('');
+    console.log(formatted);
 };
-makeSentence;
+makeSentence();
 
 // console.log(finalSentence);
 
